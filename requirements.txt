@@ -1,0 +1,7 @@
+﻿python-dotenv
+python-telegram-bot
+schedule
+feedparser
+beautifulsoup4
+transformers
+sentence-transformers
