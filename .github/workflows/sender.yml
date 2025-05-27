@@ -1,9 +1,8 @@
-# .github/workflows/sender.yml
 name: 📬 Sender
 
 on:
   schedule:
-    # кожні 4 години (в UTC)
+    # кожні 4 години UTC
     - cron: '0 */4 * * *'
   workflow_dispatch:
 
@@ -12,25 +11,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+      - run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-    - name: Load environment variables
-      run: echo "BOT_TOKEN=${{ secrets.BOT_TOKEN }}" >> $GITHUB_ENV
-    - run: echo "CHAT_ID=${{ secrets.CHAT_ID }}" >> $GITHUB_ENV
+      - run: |
+          echo "BOT_TOKEN=${{ secrets.BOT_TOKEN }}" >> $GITHUB_ENV
+          echo "CHAT_ID=${{ secrets.CHAT_ID }}"   >> $GITHUB_ENV
 
-    - name: Initialize database
-      run: python init_db.py
+      - run: python init_db.py
 
-    - name: Run sender
-      run: python sender.py
+      - run: python sender.py
