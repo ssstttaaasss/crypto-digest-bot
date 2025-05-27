@@ -1,10 +1,37 @@
 ﻿[
-  ""https://t.me/+sV9Ozk5Nfq1jOTUy"",
-  ""https://t.me/+sV9Ozk5Nfq1jOTUy"",
-  ""https://t.me/doubletop"",
-  ""https://t.me/doubletop_chat"",
-  ""https://t.me/hexdrunker_reflections"",
-  ""https://t.me/crypto_rostik"",
-  ""https://t.me/s/bulka_crypto"",
-  ""https://github.com/ssstttaaasss/crypto-digest-bot.git""
+  // RSS-фіди
+  { "type": "rss",      "url": "https://feeds.feedburner.com/CoinDesk" },
+  { "type": "rss",      "url": "https://cointelegraph.com/rss" },
+  { "type": "rss",      "url": "https://www.theblock.co/rss" },
+  { "type": "rss",      "url": "https://decrypt.co/feed" },
+  { "type": "rss",      "url": "https://cryptoslate.com/feed/" },
+  { "type": "rss",      "url": "https://blog.binance.com/rss" },
+  { "type": "rss",      "url": "https://cryptopanic.com/feed/" },
+  { "type": "rss",      "url": "https://news.bitcoin.com/feed/" },
+
+  // Telegram-канали
+  { "type": "telegram", "url": "https://t.me/+sV9Ozk5Nfq1jOTUy" },
+  { "type": "telegram", "url": "https://t.me/doubletop" },
+  { "type": "telegram", "url": "https://t.me/doubletop_chat" },
+  { "type": "telegram", "url": "https://t.me/hexdrunker_reflections" },
+  { "type": "telegram", "url": "https://t.me/crypto_rostik" },
+  { "type": "telegram", "url": "https://t.me/s/bulka_crypto" },
+
+  // Twitter / X
+  { "type": "twitter",  "url": "https://x.com/binance" },
+  { "type": "twitter",  "url": "https://x.com/VitalikButerin" },
+  { "type": "twitter",  "url": "https://x.com/cz_binance" },
+
+  // Reddit
+  { "type": "reddit",   "url": "https://www.reddit.com/r/CryptoCurrency/.rss" },
+  { "type": "reddit",   "url": "https://www.reddit.com/r/ethfinance/.rss" },
+
+  // Discord (приклад через webhook або публічний RSS)
+  { "type": "discord",  "url": "https://discord.com/channels/..." },
+
+  // YouTube Community
+  { "type": "youtube",  "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCr..." },
+
+  // GitHub (для коду-репо, не обовʼязково)
+  { "type": "github",   "url": "https://github.com/ssstttaaasss/crypto-digest-bot.git" }
 ]

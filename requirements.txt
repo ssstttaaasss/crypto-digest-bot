@@ -1,7 +1,8 @@
-﻿python-dotenv
-python-telegram-bot
-schedule
-feedparser
-beautifulsoup4
-transformers
-sentence-transformers
+﻿python-dotenv            # зчитування .env
+python-telegram-bot      # робота з Telegram Bot API
+schedule                 # простий планувальник
+feedparser               # RSS-фіди
+beautifulsoup4           # HTML-скрапінг
+requests                 # HTTP-запити
+transformers             # NLP-моделі (sum, zero-shot)
+sentence-transformers    # embeddings для дедуплікації
